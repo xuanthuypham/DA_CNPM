@@ -1,6 +1,71 @@
 <div class="row">
     <!-- Page Header -->
-    <div class="col-lg-12">
+    <div class="col-lg-12" style="padding-top: 10px">
+        <ul class="nav nav-tabs">
+            <li class="active" style="width: 300px;"><a data-toggle="tab" href="#home">Gửi xe</a></li>
+            <li style="width: 300px;" id="out-tab" ><a data-toggle="tab" href="#menu1" onclick="vehicle_manager.out_load()">Lấy xe</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <div class="row ">
+                    <div class="col-md-6 video-farme">
+                        <h2>CAMERA</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 func-head"><h4>Thông tin xe vào</h4></div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="bks" placeholder="Biển số xe" name="bks">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="cardid" placeholder="Mã số thẻ quẹt" name="cardid">
+                                </div>
+                                <button  class="btn btn-default btn-confirm" onclick="vehicle_manager.confirm_in()">Xác nhận gửi</button>
+                            </div>
+                            <div class="col-md-6 image-frame">
+                                <h3>Ảnh chụp BKS</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+                <div class="row ">
+                    <div class="col-md-6 video-farme">
+                        <h2>CAMERA</h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-12 func-head"><h4>Thông tin làn xe ra</h4></div>
+                            <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="bks" placeholder="Biển số xe" name="bks" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="cardid" placeholder="Mã số thẻ quẹt" name="cardid" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="datetime" class="form-control" id="datein" placeholder="Thời gian vào" name="name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="datetime" class="form-control" id="dateout" placeholder="Thời gian ra" name="name" required>
+                                    </div>
+                                <button  class="btn btn-default btn-confirm" onclick="vehicle_manager.confirm_out()">Xác nhận lấy xe</button>
+                            </div>
+                            <div class="col-md-4 image-frame">
+                                <h3>Ảnh chụp BKS Xe ra</h3>
+                            </div>
+                            <div class="col-md-4 image-frame">
+                                <h3>Ảnh chụp BKS Xe vào</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
     <!--End Page Header -->
 </div>
