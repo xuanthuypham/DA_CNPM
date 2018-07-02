@@ -1,15 +1,18 @@
 var vehicle_manager = {
     path: window.location.pathname.substring(0, window.location.pathname.indexOf("/", 2)),
-
+    users: [{"admin": "123456"}, {"user": "123456"}, {"guest": "123456"}],
     navside: function () {
         $("#nav-side").load(this.path + "/template/nav-side.html");
-    },
+    }
+    ,
     navtop: function () {
         $("#nav-top").load(this.path + "/template/nav-top.html");
-    },
+    }
+    ,
     content: function () {
         $('#page-wrapper').load(this.path + "/template/page-wrapper.html");
-    },
+    }
+    ,
     confirm_in: function () {
         var inputs = [];
         $("#home input").each(function () {
@@ -46,12 +49,25 @@ var vehicle_manager = {
             alert("Không thành công. Thông tin thiếu hoặc không đúng");
         } else {
             if (inputs.username === "admin" && inputs.password === "123456") {
+                $.cookie("login", "admin");
                 window.location.replace(this.path + "/index.html");
-            }else if(inputs.username === "user" && inputs.password === "123456"){
+            } else if (inputs.username === "user" && inputs.password === "123456") {
+                $.cookie("login", "user");
                 window.location.replace(this.path + "/blank.html");
-            }else{
+            } else {
                 alert("Không thành công. Thông tin thiếu hoặc không đúng");
             }
         }
+    },
+    permission: function (permiss) {
+        if (!permiss.includes($.cookie("login"))) {
+            window.location.replace(this.path + "/login.html");
+        } else {
+            console.log($.cookie("login"));
+        }
+    },
+    logout: function () {
+        $.removeCookie("login");
+        window.location.replace(this.path + "/login.html");
     }
 };
