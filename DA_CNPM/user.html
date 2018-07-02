@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootsrtap Free Admin Template - SIMINTA | Admin Dashboad Template</title>
+    <title>Quản lý bãi gửi xe</title>
     <!-- Core CSS - Include with every page -->
     <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -71,7 +71,7 @@
                                 <img src="assets/img/user.jpg" alt="">
                             </div>
                             <div class="user-info">
-                                <div>Jonny <strong>Deen</strong></div>
+                                <div><strong>Chiêu Pg</strong></div>
                                 <div class="user-text-online">
                                     <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
                                 </div>
@@ -92,7 +92,7 @@
                         <!--end search section-->
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                        <a href="index1.html"><i class="fa fa-dashboard fa-fw"></i>Trang chủ</a>
                     </li>
                     <li>
                         <a href="parkingcard.html"><i class="fa fa-flask fa-fw"></i>Quản lý thẻ gửi xe</a>
@@ -127,56 +127,6 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">Tables</h1>
                 </div>
-             <div class="panel panel-default" style="margin-top: 100px;">
-                    <div class="panel-heading">
-                        <span>Tìm kiếm</span>
-                    </div>
-                    <div class="panel-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="row">
-                             <div class="col-sm-6">
-                                <div class="form-group">
-                                <label class="col-sm-3 control-label">Tên đăng nhập</label>
-                                <div class="col-sm-7">
-                                <input type="text" class="form-control" name="">
-                                </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Tên nhân viên</label> 
-                                    <div class="col-sm-7">   
-                                    <input type="text" class="form-control" name="">
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Phòng ban</label> 
-                                    <div class="col-sm-9">   
-                                    <select class="form-control">
-                                        <option>Phòng 1</option>
-                                        <option>Phòng 2</option>
-                                        <option>Phòng N</option>
-                                    </select>
-                                </div>
-                                </div>
-                                <div class="form-group">
-                                    <label class="col-sm-3 control-label">Trạng thái</label> 
-                                    <div class="col-sm-9"> 
-                                    <select class="form-control">
-                                        <option>Active</option>
-                                        <option>Inactive</option>
-                                    </select>
-                                </div>
-                                </div>
-                            </div>
-                           
-                    </div>
-                    <div class="row">
-                        <button style="margin-top: 20px;" class="btn btn-primary col-sm-offset-1" type="submit" >Tìm kiếm</button>
-                    </div>
-                    </form>
-                </div>
-            </div>
                  <!-- end  page header -->
             </div>
             <div class="row">
@@ -205,28 +155,28 @@
                                     <tbody>
                                        <tr class="odd gradeX">
                                             <td>admin</td>  
-                                            <td>Internet Explorer 4.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
+                                            <td>Đặng Tiến Chiêu Pg</td>
+                                            <td>04509450834</td>
+                                            <td class="center">Hai Bà Trưng - Hà Nội</td>
+                                            <td class="center">Quản lý</td>
                                             <td>Active</td>
                                             <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
-                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid" onclick="pass('admin','Đăng Tiến Chiêu Pg','04509450834','Hai Bà Trưng - Hà Nôi','Quản Lý','Phòng 1','image/11169866_1589745381307680_1325692858016042826_n.jpg')">Sửa đổi</a></td>
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>admin1</td>
-                                            <td>Internet Explorer 5.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                            <td class="center">C</td>
+                                            <td>Vũ Thị Khánh Chi Og</td>
+                                            <td>05342453544</td>
+                                            <td class="center">Hai Bà Trưng - Hà Nội</td>
+                                            <td class="center">Quản lý</td>
                                             <td>Active</td>
-                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
-                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid2">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid" onclick="pass('admin1','Vũ Thị Khánh Chi Og','05342453544','Hai Bà Trưng - Hà Nội','Quản lý','Phòng 2','image/23244081_1757895034244419_4159042428448616778_n.jpg')">Sửa đổi</a></td>
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>admin</td>
+                                            <td>admin2</td>
                                             <td>Đặng Tiến Chiêu</td>
                                             <td>03498345</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -237,7 +187,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>admin1</td>
+                                            <td>admin3</td>
                                             <td>Vũ Thị Khánh Chi</td>
                                             <td>054309530</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -248,7 +198,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>admin</td>
+                                            <td>admin4</td>
                                             <td>Đặng Tiến Chiêu</td>
                                             <td>03498345</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -259,7 +209,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>admin1</td>
+                                            <td>admin5</td>
                                             <td>Vũ Thị Khánh Chi</td>
                                             <td>054309530</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -270,7 +220,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>admin</td>
+                                            <td>admin6</td>
                                             <td>Đặng Tiến Chiêu</td>
                                             <td>03498345</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -281,7 +231,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>admin1</td>
+                                            <td>admin7</td>
                                             <td>Vũ Thị Khánh Chi</td>
                                             <td>054309530</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -292,7 +242,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>admin</td>
+                                            <td>admin8</td>
                                             <td>Đặng Tiến Chiêu</td>
                                             <td>03498345</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -303,7 +253,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>admin1</td>
+                                            <td>admin9</td>
                                             <td>Vũ Thị Khánh Chi</td>
                                             <td>054309530</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -314,7 +264,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>admin</td>
+                                            <td>admin9</td>
                                             <td>Đặng Tiến Chiêu</td>
                                             <td>03498345</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -325,7 +275,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>admin1</td>
+                                            <td>admin9</td>
                                             <td>Vũ Thị Khánh Chi</td>
                                             <td>054309530</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -336,7 +286,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>admin</td>
+                                            <td>admin9</td>
                                             <td>Đặng Tiến Chiêu</td>
                                             <td>03498345</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -347,7 +297,7 @@
                                             <td><a href="#" itemid="card2" class="delete-item">Xoa</a></td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>admin1</td>
+                                            <td>admin9</td>
                                             <td>Vũ Thị Khánh Chi</td>
                                             <td>054309530</td>
                                             <td class="center">Hai Bà Trưng - Hà Nội</td>
@@ -409,7 +359,11 @@
                                               </div>
                                               <div class="form-group">
                                                   <label>Phòng ban</label>
-                                                  <input type="text" name="" class="form-control">
+                                                  <select class="form-control">
+                                                      <option>Phòng 1</option>
+                                                      <option>PHòng 2</option>
+                                                      <option>Phòng N</option>
+                                                  </select>
                                               </div>
                                               <div class="form-group">
                                                   <label class="col-sm-3">Trạng thái</label>
@@ -426,8 +380,8 @@
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                                            <button type="button" class="btn btn-primary">Lưu</button>
                                         </div>
                                     </div>
                                 </div>
@@ -444,27 +398,27 @@
                                           <div class="col-sm-6">
                                               <div class="form-group">
                                                   <label>Tên đăng nhập</label>
-                                                  <input type="text" name="" class="form-control" disabled>
+                                                  <input type="text" name="" value="admin1" class="form-control" disabled>
                                               </div>
                                               <div class="form-group">
                                                   <label>Tên nhân viên</label>
-                                                  <input type="text" name="" class="form-control" disabled>
+                                                  <input type="text" name="" value="Đặng Tiến Chiêu Pg" class="form-control" disabled>
                                               </div>
                                               <div class="form-group">
                                                   <label>Số điện thoại</label>
-                                                  <input type="text" name="" class="form-control" disabled>
+                                                  <input type="text" name="" value="04509450834" class="form-control" disabled>
                                               </div>
                                               <div class="form-group">
                                                   <label>Địa chỉ</label>
-                                                  <input type="text" name="" class="form-control" disabled>
+                                                  <input type="text" value="Hai Bà Trưng - Hà Nội" name="" class="form-control" disabled>
                                               </div>
                                               <div class="form-group">
                                                   <label>Chức vụ</label>
-                                                  <input type="text" name="" class="form-control" disabled>
+                                                  <input type="text" name="" value="Quản Lý" class="form-control" disabled>
                                               </div>
                                               <div class="form-group">
                                                   <label>Phòng ban</label>
-                                                  <input type="text" name="" class="form-control" disabled>
+                                                  <input type="text" name="" value="Phòng 1" class="form-control" disabled>
                                               </div>
                                           </div>
                                           <div class="col-sm-6">
@@ -490,14 +444,77 @@
                                         </div>
                                         <div class="clearfix"></div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- end detail model -->
 
+<!-- Chi modal -->
+                               <div class="modal fade" id="modalid2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Chi tiết tài khoản</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                          <div class="col-sm-6">
+                                              <div class="form-group">
+                                                  <label>Tên đăng nhập</label>
+                                                  <input type="text" name="" value="admin1" class="form-control" disabled>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Tên nhân viên</label>
+                                                  <input type="text" name="" value="Vũ Thị Khánh Chi Og" class="form-control" disabled>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Số điện thoại</label>
+                                                  <input type="text" name="" value="05342453544" class="form-control" disabled>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Địa chỉ</label>
+                                                  <input type="text" name="" value="Hai Bà Trưng - Hà Nội" class="form-control" disabled>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Chức vụ</label>
+                                                  <input type="text" name="" value="Quản Lý" class="form-control" disabled>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Phòng ban</label>
+                                                  <input type="text" name="" value="Phòng 2" class="form-control" disabled>
+                                              </div>
+                                          </div>
+                                          <div class="col-sm-6">
+                                              <div class="form-group">
+                                                  <label></label>
+                                                  <div class="form-group">
+                                                  <img src="image/23244081_1757895034244419_4159042428448616778_n.jpg" class="img-rounded" alt="Cinque Terre" width="400" height="335" > 
+                                              </div>
+                                              </div>
+                                              
+                                              <div class="form-group">
+                                                  <label class="col-sm-3">Trạng thái</label>
+                                                  <div class="radio">
+                                                  <div class="col-sm-4">
+                                                    <input type="radio" name="" checked >Active
+                                                  </div>
+                                                  <div class="col-sm-5">
+                                                    <input type="radio" name="">Inactive
+                                                  </div>
+                                                </div>
+                                             </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+<!-- -->
 
                 <!--  Start edit modal-->
                     <div class="modal fade" id="modaleditid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -511,7 +528,7 @@
                                           <div class="col-sm-6">
                                               <div class="form-group">
                                                   <label>Tên đăng nhập <div id="mes5" style="color: red;"></div></label>
-                                                  <input type="text" id="userid1" name="" class="form-control">
+                                                  <input type="text" disabled id="userid1" name="" class="form-control">
                                               </div>
                                               <div class="form-group">
                                                   <label>Tên nhân viên <div id="mes6" style="color: red;"></div></label>
@@ -523,22 +540,25 @@
                                               </div>
                                               <div class="form-group">
                                                   <label>Địa chỉ</label>
-                                                  <input type="text" name="" class="form-control">
+                                                  <input type="text" id="addressid1" name="" class="form-control">
                                               </div>
                                               <div class="form-group">
                                                   <label>Chức vụ</label>
-                                                  <input type="text" name="" class="form-control">
-                                              </div>
-                                          </div>
-                                          <div class="col-sm-6">
-                                              <div class="form-group">
-                                                  <label>Ảnh</label>
-                                                    <input type="file" name="pic" class="form-control" accept="image/*">
+                                                  <input type="text" id="roleid1" name="" class="form-control">
                                               </div>
                                               <div class="form-group">
                                                   <label>Phòng ban</label>
-                                                  <input type="text" name="" class="form-control">
+                                                  <input type="text" id="depid1" name="" class="form-control">
                                               </div>
+                                          </div>
+                                          <div class="col-sm-6">
+
+                                              <div class="form-group">
+                                                  <label>Ảnh</label>
+                                                  <img src="" id="imgid1" class="img-rounded" alt="Empty" width="400" height="335" > 
+                                                    <input type="file" name="pic" class="form-control" accept="image/*">
+                                              </div>
+                                              
                                               <div class="form-group">
                                                   <label class="col-sm-3">Trạng thái</label>
                                                   <div class="radio">
@@ -578,6 +598,8 @@
     <script src="js/main.js"></script>
     <script>
         vehicle_manager.deleteUser();
+
+        // Check validate data
         var message = "Điền đầy đủ thông tin!!!";
         $(document).ready(function () {
             $('#dataTables-example').dataTable();
@@ -643,6 +665,17 @@
                                 }
                         }
                 });
+
+                // pass data to modal
+                function pass(user,name,phone,address,role,dep,src){
+                    document.getElementById("userid1").value = user;
+                    document.getElementById("nameid1").value = name;
+                    document.getElementById("phoneid1").value = phone;
+                    document.getElementById("addressid1").value = address;
+                    document.getElementById("roleid1").value = role;
+                    document.getElementById("depid1").value = dep;
+                    document.getElementById("imgid1").src = src;
+                }
     </script>
 
 </body>

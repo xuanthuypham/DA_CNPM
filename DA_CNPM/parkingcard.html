@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootsrtap Free Admin Template - SIMINTA | Admin Dashboad Template</title>
+    <title>Quản lý bãi gửi xe</title>
     <!-- Core CSS - Include with every page -->
     <link href="assets/plugins/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -74,7 +74,7 @@
                                 <img src="assets/img/user.jpg" alt="">
                             </div>
                             <div class="user-info">
-                                <div>Jonny <strong>Deen</strong></div>
+                                <div><strong>Chiêu Pg</strong></div>
                                 <div class="user-text-online">
                                     <span class="user-circle-online btn btn-success btn-circle "></span>&nbsp;Online
                                 </div>
@@ -95,7 +95,7 @@
                         <!--end search section-->
                     </li>
                     <li>
-                        <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
+                        <a href="index1.html"><i class="fa fa-dashboard fa-fw"></i>Trang chủ</a>
                     </li>
                     <li class="selected">
                         <a href="parkingcard.html"><i class="fa fa-flask fa-fw"></i>Quản lý thẻ gửi xe</a>
@@ -146,65 +146,104 @@
                                         <tr>
                                             <th>Mã thẻ gửi xe</th>
                                             <th>Trạng thái</th>
-                                            <th>Ảnh xe</th>
+                                            <th>Ngày lập</th>
+                                            <th class="text-center"><button data-toggle="modal" data-target="#modaladdid" class="btn btn-primary">Thêm mới</button></th>
+                                            <th></th>
+                                            <th></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                        <tr class="odd gradeX">
                                             <td>24323</td>  
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid" onclick="pass('24323','Đang gửi xe','02-07-2018')" >Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24324</td>
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg1" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid" onclick="pass('24324','Đang gửi xe','02-07-2018')">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="odd gradeX">
                                             <td>24325</td>  
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg2" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24326</td>
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg3" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24327</td>  
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg4" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24328</td>
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg5" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24329</td>  
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg6" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24330</td>
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg7" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24331</td>  
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg8" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24332</td>
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg0" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24333</td>  
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg10" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24334</td>
                                             <td>Đang gửi xe</td>
-                                            <td><a href="#" data-toggle="modal" id="myImg11" data-target="#modalid">Ảnh</a></td>
+                                            <td>02-07-2018</td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modalid">Chi tiết</a></td>
+                                            <td><a href="#" data-toggle="modal" data-target="#modaleditid">Sửa đổi</a></td>
+                                            <td><a href="#" itemid="card2" class="delete-item">Xóa</a></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -224,11 +263,177 @@
                           <div id="caption"></div>
                         </div>
 
+
+                                  <!-- New modal -->
+                   <div class="modal fade" id="modaladdid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Thêm tài khoản</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                      
+                                              <div class="form-group">
+                                                  <label>Mã thẻ <div id="mes1" style="color: red;"></div></label>
+                                                  <input type="text"  id="maid" name="" class="form-control">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Trạng thái<div id="mes2" style="color: red;"></div></label>
+                                                  <select id="statusid" name="" class="form-control">
+                                                    <option>Đang gửi xe</option>
+                                                    <option>Đã lấy xe</option>
+                                                    <option>Inactive</option>
+                                                  </select>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Ngày tạo<div id="mes3" style="color: red;"></div></label>
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' id="createdateid" class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                              </div>
+                                           
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                                            <button type="button" class="btn btn-primary">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+            <!-- End modal-->
+                                <div class="modal fade" id="modalid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Chi tiết tài khoản</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                             <div class="form-group">
+                                                  <label>Mã thẻ </label>
+                                                  <input type="text" value="24323"  disabled name="" class="form-control">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Trạng thái</label>
+                                                  <input type="text" value="Đăng gửi xe" disabled name="" class="form-control">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Ngày tạo</label>
+                                                        <input type='text' value="02-07-2018" disabled class="form-control" />
+                                                
+                                              </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end detail model -->
+
+
+                <!--  Start edit modal-->
+                    <div class="modal fade" id="modaleditid" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content"> <div id="mes1" style="color: red;"></div>
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">Cập nhập tài khoản</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                  <label>Mã thẻ <div id="mes4" style="color: red;"></div></label>
+                                                  <input type="text"  id="maid1" name="" class="form-control">
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Trạng thái<div id="mes5" style="color: red;"></div></label>
+                                                  <select id="statusid1" name="" class="form-control">
+                                                    <option>Đang gửi xe</option>
+                                                    <option>Đã lấy xe</option>
+                                                    <option>Inactive</option>
+                                                  </select>
+                                              </div>
+                                              <div class="form-group">
+                                                  <label>Ngày tạo<div id="mes6" style="color: red;"></div></label>
+                                                    <div class='input-group date' id='datetimepicker1'>
+                                                        <input type='text' id="createdateid1" class="form-control" />
+                                                        <span class="input-group-addon">
+                                                            <span class="glyphicon glyphicon-calendar"></span>
+                                                        </span>
+                                                    </div>
+                                              </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Thoát</button>
+                                            <button type="button" class="btn btn-primary">Lưu</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>             
+
     </div>
     <!-- end wrapper -->
 
+    <script src="assets/plugins/jquery-1.10.2.js"></script>
+    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="assets/plugins/pace/pace.js"></script>
+    <script src="assets/scripts/siminta.js"></script>
+    <!-- Page-Level Plugin Scripts-->
+    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="js/main.js"></script>
 
 <script>
+
+vehicle_manager.deleteCard();
+
+//Check valideate
+
+        var message = "Điền đầy đủ thông tin!!!";
+               document.getElementById("maid").addEventListener("blur",function(){
+                        if(this.value ===""){
+                                document.getElementById("mes1").innerHTML = message ;
+                            }else{
+                                document.getElementById("mes1").innerHTML = null ;
+                                }
+                    });
+                document.getElementById("createdateid").addEventListener("blur",function(){
+                    if(this.value ===""){
+                            document.getElementById("mes3").innerHTML = message ;
+                        } else {
+                            document.getElementById("mes3").innerHTML = null ;
+                            }
+                });
+                document.getElementById("maid1").addEventListener("blur",function(){
+                    if(this.value ===""){
+                            document.getElementById("mes4").innerHTML = message ;
+                        } else {
+                            document.getElementById("mes4").innerHTML = null ;
+                            }
+                });
+                document.getElementById("createdateid1").addEventListener("blur",function(){
+                    if(this.value ===""){
+                            document.getElementById("mes6").innerHTML = message ;
+                        } else {
+                            document.getElementById("mes6").innerHTML = null ;
+                            }
+                });
+// End check validate
+
+// pass data
+function pass(ma,status,date) {
+    // body..
+    document.getElementById("maid1").value = ma;
+    document.getElementById("statusid1").value = status;
+    document.getElementById("createdateid1").value = date;
+}
+
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -250,16 +455,8 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 </script>
-
     <!-- Core Scripts - Include with every page -->
-    <script src="assets/plugins/jquery-1.10.2.js"></script>
-    <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
-    <script src="assets/plugins/pace/pace.js"></script>
-    <script src="assets/scripts/siminta.js"></script>
-    <!-- Page-Level Plugin Scripts-->
-    <script src="assets/plugins/dataTables/jquery.dataTables.js"></script>
-    <script src="assets/plugins/dataTables/dataTables.bootstrap.js"></script>
+
     <script>
         $(document).ready(function () {
             $('#dataTables-example').dataTable();

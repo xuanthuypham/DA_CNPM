@@ -116,5 +116,13 @@ var vehicle_manager = {
                 $(this).parent("td").parent("tr").remove();
             }
         });
+    },
+        deleteCard: function () {
+        $(".delete-item").click(function () {
+            var cfr = confirm("Xác nhận xóa thẻ?");
+            if (cfr) {
+                $(this).parent("td").parent("tr").remove();
+            }
+        });
     }
 };
