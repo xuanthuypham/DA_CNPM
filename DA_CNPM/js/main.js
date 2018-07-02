@@ -11,30 +11,47 @@ var vehicle_manager = {
         $('#page-wrapper').load(this.path + "/template/page-wrapper.html");
     },
     confirm_in: function () {
-        var inputs=[];
-        $("#home input").each(function(){
-            inputs.push({"name":$(this).attr("name"),"value":$(this).val()});
+        var inputs = [];
+        $("#home input").each(function () {
+            inputs[$(this).attr("name")] = $(this).val();
         });
-        if(inputs[0].value === "" || inputs[1].value=== ""){
-            alert("Không thành công. Thông tin thiếu");
-        }else{
+        if (inputs.cardid === "") {
+            alert("Không thành công. Thông tin thiếu hoặc không đúng");
+        } else {
             alert("Thêm thành công");
         }
     },
     confirm_out: function () {
-        var inputs=[];
-        $("#menu1 input").each(function(){
-            inputs.push({"name":$(this).attr("name"),"value":$(this).val()});
+        var inputs = {};
+        $("#menu1 input").each(function () {
+            inputs[$(this).attr("name")] = $(this).val();
         });
-        if(inputs[0].value === "" || inputs[1].value=== ""){
-            alert("Không thành công. Thông tin thiếu");
-        }else{
+        if (inputs.cardid === "") {
+            alert("Không thành công. Thông tin thiếu hoặc không đúng");
+        } else {
             alert("Thêm thành công");
         }
-        
+
     },
-    out_load:function(){
+    out_load: function () {
         $("#menu1 #dateout").val(new Date());
         $("#menu1 #datein").val(new Date());
+    },
+    login: function () {
+        var inputs = {};
+        $("#login input").each(function () {
+            inputs[$(this).attr("name")] = $(this).val();
+        });
+        if (inputs.username === "" || inputs.password === "") {
+            alert("Không thành công. Thông tin thiếu hoặc không đúng");
+        } else {
+            if (inputs.username === "admin" && inputs.password === "123456") {
+                window.location.replace(this.path + "/index.html");
+            }else if(inputs.username === "user" && inputs.password === "123456"){
+                window.location.replace(this.path + "/blank.html");
+            }else{
+                alert("Không thành công. Thông tin thiếu hoặc không đúng");
+            }
+        }
     }
 };

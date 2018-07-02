@@ -28,10 +28,10 @@
                         <h3 class="panel-title">Please Sign In</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form">
+                        <form role="form" id="login">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="Username" name="username" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
@@ -42,7 +42,7 @@
                                     </label>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
-                                <a href="index.html" class="btn btn-lg btn-success btn-block">Login</a>
+                                <a href="#" class="btn btn-lg btn-success btn-block" onclick="vehicle_manager.login()">Login</a>
                             </fieldset>
                         </form>
                     </div>
@@ -55,7 +55,7 @@
     <script src="assets/plugins/jquery-1.10.2.js"></script>
     <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
     <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
