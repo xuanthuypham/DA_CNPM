@@ -50,11 +50,8 @@ var vehicle_manager = {
         } else {
             if (inputs.username === "admin" && inputs.password === "123456") {
                 $.cookie("login", "admin");
-                window.location.replace(this.path + "/index.html");
-            } else if (inputs.username === "user" && inputs.password === "123456") {
-                $.cookie("login", "user");
-                window.location.replace(this.path + "/blank.html");
-            } else {
+                window.location.replace(this.path + "/index1.html");
+            }else {
                 alert("Không thành công. Thông tin thiếu hoặc không đúng");
             }
         }
