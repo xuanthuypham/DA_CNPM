@@ -24,7 +24,7 @@
     <!--  wrapper -->
     <div id="wrapper">
         <!-- navbar top -->
- <nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar" style="margin: 0px;">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar" style="margin: 0px;">
     <!-- navbar-header -->
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -97,13 +97,13 @@
                     <li>
                         <a href="index.html"><i class="fa fa-dashboard fa-fw"></i>Dashboard</a>
                     </li>
-                    <li class="selected">
+                    <li>
                         <a href="parkingcard.html"><i class="fa fa-flask fa-fw"></i>Quản lý thẻ gửi xe</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Quản lý lịch sử gửi xe<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li>
+                            <li class="selected">
                                 <a href="parkinghistory.html">Lịch sử xe gửi</a>
                             </li>
                             <li>
@@ -130,6 +130,17 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">Tables</h1>
                 </div>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="form-inline">
+                            
+                            <div class="form-group">
+                                <label></label>
+                                <input type="" name="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
                  <!-- end  page header -->
             </div>
             <div class="row">
@@ -137,73 +148,86 @@
                     <!-- Advanced Tables -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                             Quản lý thẻ gửi xe
+                             Quản lý lịch sử gửi xe
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>Mã thẻ gửi xe</th>
-                                            <th>Trạng thái</th>
+                                            <th>Mã thẻ</th>
+                                            <th>Ngày</th>
+                                            <th>Thời gian gửi <span>(giờ)</span></th>
                                             <th>Ảnh xe</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                        <tr class="odd gradeX">
                                             <td>24323</td>  
-                                            <td>Đang gửi xe</td>
+                                            <td>20-06-2018</td>
+                                            <td>14:20:30</td>
                                             <td><a href="#" data-toggle="modal" id="myImg" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24324</td>
-                                            <td>Đang gửi xe</td>
+                                            <td>20-06-2018</td>
+                                            <td>20:10:58</td>
                                             <td><a href="#" data-toggle="modal" id="myImg1" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="odd gradeX">
                                             <td>24325</td>  
-                                            <td>Đang gửi xe</td>
+                                            <td>21-06-2018</td>
+                                            <td>08:02:00</td>
                                             <td><a href="#" data-toggle="modal" id="myImg2" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24326</td>
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg3" data-target="#modalid">Ảnh</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24327</td>  
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg4" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24328</td>
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018 10:12:12</td>
+                                            <td>10</td>
                                             <td><a href="#" data-toggle="modal" id="myImg5" data-target="#modalid">Ảnh</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24329</td>  
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg6" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24330</td>
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018 10:12:12</td>
+                                            <td>10</td>
                                             <td><a href="#" data-toggle="modal" id="myImg7" data-target="#modalid">Ảnh</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24331</td>  
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg8" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24332</td>
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg0" data-target="#modalid">Ảnh</a></td>
                                         </tr><tr class="odd gradeX">
                                             <td>24333</td>  
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg10" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                         <tr class="even gradeC">
                                             <td>24334</td>
-                                            <td>Đang gửi xe</td>
+                                            <td>24-06-2018</td>
+                                            <td>10:12:12</td>
                                             <td><a href="#" data-toggle="modal" id="myImg11" data-target="#modalid">Ảnh</a></td>
                                         </tr>
                                     </tbody>
