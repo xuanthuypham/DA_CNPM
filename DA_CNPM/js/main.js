@@ -61,9 +61,10 @@ var vehicle_manager = {
     },
     permission: function (permiss) {
         if (!permiss.includes($.cookie("login"))) {
+            $.removeCookie("login");
             window.location.replace(this.path + "/login.html");
         } else {
-            console.log($.cookie("login"));
+
         }
     },
     logout: function () {
