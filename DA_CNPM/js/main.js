@@ -1,6 +1,47 @@
 var vehicle_manager = {
     path: window.location.pathname.substring(0, window.location.pathname.indexOf("/", 2)),
-    users: [{"admin": "123456"}, {"user": "123456"}, {"guest": "123456"}],
+    users: [
+        {
+            uname: "admin",
+            name: "Dang Tien Chieu",
+            phone: "2324344345",
+            address: "Ha noi",
+            title: "CHuc vu cao cap",
+            status: "active",
+            unit: "Phong ban 1",
+            image: "http://image1"
+        },
+        {
+            uname: "admin",
+            name: "Dang Tien Chieu",
+            phone: "2324344345",
+            address: "Ha noi",
+            title: "CHuc vu cao cap",
+            status: "active",
+            unit: "Phong ban 1",
+            image: "http://image1"
+        },
+        {
+            uname: "admin",
+            name: "Dang Tien Chieu",
+            phone: "2324344345",
+            address: "Ha noi",
+            title: "CHuc vu cao cap",
+            status: "active",
+            unit: "Phong ban 1",
+            image: "http://image1"
+        },
+        {
+            uname: "admin",
+            name: "Dang Tien Chieu",
+            phone: "2324344345",
+            address: "Ha noi",
+            title: "CHuc vu cao cap",
+            status: "active",
+            unit: "Phong ban 1",
+            image: "http://image1"
+        }
+    ],
     navside: function () {
         $("#nav-side").load(this.path + "/template/nav-side.html");
     }
@@ -51,7 +92,7 @@ var vehicle_manager = {
             if (inputs.username === "admin" && inputs.password === "123456") {
                 $.cookie("login", "admin");
                 window.location.replace(this.path + "/index1.html");
-            }else {
+            } else {
                 alert("Không thành công. Thông tin thiếu hoặc không đúng");
             }
         }
@@ -67,5 +108,13 @@ var vehicle_manager = {
     logout: function () {
         $.removeCookie("login");
         window.location.replace(this.path + "/login.html");
+    },
+    deleteUser: function () {
+        $(".delete-item").click(function () {
+            var cfr = confirm("Xác nhận xóa người dùng");
+            if (cfr) {
+                $(this).parent("td").parent("tr").remove();
+            }
+        });
     }
 };
